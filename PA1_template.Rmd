@@ -30,6 +30,9 @@ qplot(steps, data = activityByDate, binwidth = 1000, color = I('black'), fill = 
 
 summary(activityByDate$steps)
 
+###   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+###     41    8841   10760   10770   13290   21190 
+     
 ## What is the average daily activity pattern?
 
 ## Make a time series plot (i.e. 𝚝𝚢𝚙𝚎 = "𝚕") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
@@ -41,11 +44,18 @@ qplot(interval, steps, data = averageDay, geom = 'line', color = I('blue'), main
 
 averageDay[which.max(averageDay$steps), ]
 
+###      interval    steps
+###  104      835 206.1698
+
+
 ## Imputing missing values
 
 ## Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with 𝙽𝙰s)
 
 sum(is.na(activity_data$steps))
+
+### [1] 2304
+
 
 ## Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 

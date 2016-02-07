@@ -79,6 +79,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="calculate-and-report-the-mean-and-median-of-the-total-number-of-steps-taken-per-day" class="section level2">
 <h2>Calculate and report the mean and median of the total number of steps taken per day</h2>
 <p>summary(activityByDate$steps)</p>
+<div id="min.-1st-qu.-median-mean-3rd-qu.-max." class="section level3">
+<h3>Min. 1st Qu. Median Mean 3rd Qu. Max.</h3>
+</div>
+<div id="section" class="section level3">
+<h3>41 8841 10760 10770 13290 21190</h3>
+</div>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
@@ -90,6 +96,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="which-5-minute-interval-on-average-across-all-the-days-in-the-dataset-contains-the-maximum-number-of-steps" class="section level2">
 <h2>Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?</h2>
 <p>averageDay[which.max(averageDay$steps), ]</p>
+<div id="interval-steps" class="section level3">
+<h3>interval steps</h3>
+</div>
+<div id="section-1" class="section level3">
+<h3>104 835 206.1698</h3>
+</div>
 </div>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
@@ -97,6 +109,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="calculate-and-report-the-total-number-of-missing-values-in-the-dataset-i.e.the-total-number-of-rows-with-s" class="section level2">
 <h2>Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with 𝙽𝙰s)</h2>
 <p>sum(is.na(activity_data$steps))</p>
+<div id="section-2" class="section level3">
+<h3>[1] 2304</h3>
+</div>
 </div>
 <div id="devise-a-strategy-for-filling-in-all-of-the-missing-values-in-the-dataset.-the-strategy-does-not-need-to-be-sophisticated.-for-example-you-could-use-the-meanmedian-for-that-day-or-the-mean-for-that-5-minute-interval-etc." class="section level2">
 <h2>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</h2>
